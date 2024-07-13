@@ -1,0 +1,79 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --m-color: rgb(85, 255, 255)
+}
+
+.t-shadow {
+    color: #fff;
+    text-shadow: 2px 2px 0px #ccc, 1px 1px 1px #eee, 3px 3px 5px #000;
+}
+
+/* 按钮 */
+.button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: var(--m-color);
+    box-shadow: -2px -2px 6px var(--m-color);
+
+    &:hover {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
+    }
+}
+
+/* 属性显示条 */
+& ol>li {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+
+    & .progressbar {
+        width: 210px;
+        height: 20px;
+        background-color: #eee;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        & p {
+            height: 100%;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 1rem;
+            background-color: var(--m-color);
+        }
+    }
+}

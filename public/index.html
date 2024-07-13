@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>飞机大战</title>
+    </head>
+
+    <body>
+        <div class="gaembox">
+            <!-- 开始游戏界面 -->
+            <div class="initiate-page">
+                <h1 class="t-shadow">飞机大战</h1>
+                <button class="button">开始游戏</button>
+            </div>
+            <!-- 选择界面 -->
+            <div class="select-page">
+                <h2 class="t-shadow">选择您的飞机</h2>
+                <div class="gamedetails">
+                    <p class="left arrow"></p>
+                    <ul>
+                        <li>
+                        </li>
+                    </ul>
+                    <p class="right arrow"></p>
+                </div>
+                <div class="button-group">
+                    <button class="button">确认</button>
+                    <button class="button">返回</button>
+                </div>
+            </div>
+            <!-- 结束界面 -->
+            <div class="end-page">
+                <div class="propdetails">
+                    <ol>
+                        <li>
+                            <span class="t-shadow">血量：</span>
+                            <div class="progressbar">
+                                <p class="hp" style="width: 50%;">15/30</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="t-shadow">速度：</span>
+                            <div class="progressbar">
+                                <p class="speed" style="width: 20%;">3/15</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="t-shadow">攻击力：</span>
+                            <div class="progressbar">
+                                <p class="atk" style="width: 21%;">3/14</p>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="score">
+                        <img src="../image/prpos6.png" alt="">
+                        <p>0</p>
+                    </div>
+                </div>
+
+                <!-- 游戏界面 -->
+                <canvas width="500" height="735"></canvas>
+
+                <!-- 重新开始  -->
+                <div class="restartbox">
+                    <div class="rotate"></div>
+                    <div class="restart">
+                        <p class="t-shadow">非常遗憾,您已阵亡</p>
+                        <p class="t-shadow name"></p>
+                        <p class="t-shadow end-score"></p>
+                        <button class="button">重新开始</button>
+                    </div>
+                </div>
+
+                <!-- 暂停按钮 -->
+                <p class="pause"></p>
+            </div>
+        </div>
+    </body>
+
+</html>
